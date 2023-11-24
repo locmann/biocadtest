@@ -1,6 +1,9 @@
-let element = document.querySelector("#menu");
-console.log(element);
-element.addEventListener("click", (event) => {
-  const target = event.target;
-  target.classList.add("active");
+//https://locmann.github.io/biocadtest/public/html/main.html
+
+const menu = document.querySelectorAll(".item");
+menu.forEach((val, i) => {
+  val.addEventListener("click", (e) => {
+    localStorage.clear();
+    localStorage.setItem(`item${i}`, e.target.innerHTML);
+  });
 });

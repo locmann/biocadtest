@@ -1,10 +1,17 @@
 body {
   font-family: 'Roboto', sans-serif;
-  
-}
-main {
   background-color: #F5F5F5;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+}
+
+main {
+  
   padding: 52px 24px;
+  
 }
 #logo {
   padding-left: 12px;
@@ -28,10 +35,6 @@ main {
 a:link {
   text-decoration: none;
 }
-/* 
-#menu a:visited {
-  text-decoration: none;
-} */
 
 .active {
   color: #23B04A;
@@ -39,7 +42,7 @@ a:link {
 }
 
 table {
-  background-color: white;
+  
   border-collapse: collapse;
   width: 100%;
   
@@ -58,7 +61,7 @@ td {
   padding-right: 8px;
 }
 
-input {
+#search {
   width: 50%;
   display: flex;
   margin: auto;
@@ -80,6 +83,53 @@ input {
   width: 21px;
   height: 20px;
   padding-right: 16px;
+  
+}
+#redheart, #settings {
+  width: 24px;
+  height: 24px;
+  padding: 0 8px;
+}
+
+#clock {
+  width: 24px;
+  height: 24px;
+}
+
+.head {
+  display: flex;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+}
+
+.headname {
+  display: flex;
+  
+}
+
+.headname svg {
+  margin: 16px
+}
+
+.headoptions {
+  float: right;
+  margin-left: auto;
+  
+  display: flex;
+  align-items: flex-start;
+  margin-right: 8px;
+  margin-top: 12px;
+}
+
+.headoptions select {
+  
+  border: 2px solid #23B04A;
+  border-radius: 4px;
+  color: #23B04A;
+}
+
+#unknown {
+  width: 40px;
+  height: 40px;
 }
 
 .cart {
@@ -87,7 +137,8 @@ input {
   width: 100%;
   border: 2px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  
+  padding: 0px 12px;
+  background-color: white;
 }
 
 #bell {
@@ -104,4 +155,73 @@ input {
 #bell2 {
   width: 25px;
   height: 24px;
+}
+
+#rightarrow {
+  width: 16px;
+  height: 16px;
+}
+
+.mainAnalitic {
+  padding: 52px 96px;
+
+}
+
+.cardData {
+  margin: auto;
+  width: 100%;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.20), 0px 3px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14);
+
+}
+
+.alert {
+  float: right;
+  display: flex;
+  
+}
+
+#clockbutton, #savepdf {
+  margin: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--Outline, rgba(0, 0, 0, 0.12));
+  background-color: white;
+  color: #23B04A;
+  cursor: pointer;
+}
+
+#jackdaw {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  float: right;
+  padding: 18px;
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+}
+
+.chipsdate {
+  background-color: rgba(33, 33, 33, 0.08);
+  border-radius: 16px;
+  display: flex;
+  padding: 6px 12px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+#worktime {
+  border: none;
+  padding: 16px;
+}
+
+#date {
+  margin: 16px;
+  padding: 8px;
+  border: 1px solid var(--Outline, rgba(0, 0, 0, 0.12));
 }
